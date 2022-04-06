@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "Neue-Helvetica-Light";
+  src: url("./Helvetica-Neue-UltraLight.ttf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue-Helvetica-Medium";
+  src: url("./Helvetica.Neue.Medium.Extended.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue-Helvetica-Bold";
+  src: url("./Helvetica.Neue.Bold.ttf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Moderat-Regular";
+  src: url("./Moderat-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}

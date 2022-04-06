@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 1920px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.logo {
+  font-family: "Neue-Helvetica-Bold", "sans-srif";
+  font-size: 42px;
+  padding-left: 150px;
+}
+
+.logo > span {
+  color: #fc57bf;
+}
+
+.list {
+  display: flex;
+  color: #52504e;
+}
+
+.list > li {
+  margin-right: 35px;
+  margin-left: 35px;
+  font-size: 18px;
+}
+
+.list > li:hover {
+  cursor: pointer;
+}
