@@ -15,6 +15,12 @@
   }
 }
 
+@media screen and (max-width: 860px) {
+  .container {
+    background-image: url("/images/feature/feature_mobile.png");
+  }
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -23,9 +29,36 @@
   left: 7.5%;
 }
 
+@media screen and (max-width: 860px) {
+  .headline {
+    justify-content: center;
+    align-items: center;
+    top: 15%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .headline {
+    top: 10%;
+  }
+}
+
 .title {
   font-size: 130px;
   margin: 0;
+}
+
+@media screen and (max-width: 860px) {
+  .title {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .title {
+    font-size: 72px;
+  }
 }
 
 .subtitle {
@@ -34,16 +67,44 @@
   font-family: "Neue-Helvetica-Light", "san-serif";
 }
 
+@media screen and (max-width: 860px) {
+  .subtitle {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .subtitle {
+    font-size: 72px;
+  }
+}
+
 .description {
   font-family: "Neue-Helvetica-Light", "san-serif";
-  font-size: 20px;
+  font-size: 22px;
   width: 463px;
-  justify-conter: flex-start;
   line-height: 28px;
+}
+
+@media screen and (max-width: 860px) {
+  .description {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .description {
+    font-size: 22px;
+    padding: 5px;
+  }
 }
 
 .button {
   background-color: #e1ff65;
+  color: #000;
   padding: 15px 30px;
   font-size: 20px;
   width: 246px;
@@ -67,10 +128,29 @@
   gap: 50px;
 }
 
+.partners > img {
+  width: 33%;
+}
+
 @media screen and (max-width: 1244px) {
   .partners {
     width: 75%;
     margin-top: 30px;
     gap: 30px;
+  }
+}
+
+.mainLogo {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+  .mainLogo {
+    display: flex;
+    width: 71px;
+    height: 85px;
+    position: absolute;
+    top: 20%;
+    right: 5%;
   }
 }

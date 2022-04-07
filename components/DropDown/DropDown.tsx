@@ -14,8 +14,8 @@ export function DropDown({ toggle, isOpen, data }: IProps) {
     <div
       className={styles.container}
       style={{ opacity: isOpen ? "1" : "0", top: isOpen ? "0" : "-100%" }}>
-      <div className={styles.icon}>
-        <CloseIcon onClick={toggle} />
+      <div className={styles.icon} onClick={toggle}>
+        <CloseIcon />
       </div>
 
       <div className={styles.wrapper}>

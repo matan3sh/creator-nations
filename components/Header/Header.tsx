@@ -39,9 +39,9 @@ export function Header() {
 
         <nav>
           <ul className={styles.list}>
-            <li>Speaker</li>
-            <li>Discord</li>
-            <li>Get Early Access</li>
+            {headerLinks.map((item) => (
+              <li key={item.title}>{item.title}</li>
+            ))}
           </ul>
         </nav>
 

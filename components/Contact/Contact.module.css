@@ -19,7 +19,7 @@
 }
 @media screen and (max-width: 728px) {
   .container {
-    height: 55vh;
+    height: 75vh;
   }
 }
 
@@ -78,6 +78,7 @@
 
 .button {
   font-family: "Moderat-Regular", sans-serif;
+  color: #000;
   margin: auto;
   background-color: #e1ff65;
   padding: 7.5px 15px;
