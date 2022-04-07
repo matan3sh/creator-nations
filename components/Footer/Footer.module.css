@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 10vh;
+  width: 1920px;
+  gap: 5px;
+  background: linear-gradient(304.49deg, #001443 45.38%, #000a2c 82.48%);
+  color: white;
+}
+
+@media screen and (max-width: 1920px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.container > h2 {
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 420px) {
+  .container > h2 {
+    font-size: 13px;
+  }
+}
+
+.container > h3 {
+  font-size: 16px;
+  font-weight: 300 !important;
+}

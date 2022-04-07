@@ -19,6 +19,12 @@
   padding-left: 150px;
 }
 
+@media screen and (max-width: 1130px) {
+  .logo {
+    padding-left: 50px;
+  }
+}
+
 .logo > span {
   color: #fc57bf;
 }
@@ -26,6 +32,12 @@
 .list {
   display: flex;
   color: #52504e;
+}
+
+@media screen and (max-width: 860px) {
+  .list {
+    display: none;
+  }
 }
 
 .list > li {

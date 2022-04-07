@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-direction: column;
+  margin: auto;
+  z-index: 2;
+}
+
+.container > h1 {
+  font-family: "Neue-Helvetica-Bold", "sans-srif";
+  color: #2f154a;
+  margin-top: 5rem;
+  font-size: 50px;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 475px) {
+  .container > h1 {
+    padding-top: 25px;
+    font-size: 10.6041666666666665vw;
+  }
+}
+
+.list {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  width: 70%;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+@media screen and (max-width: 1250px) {
+  .list {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .list {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.list > img {
+  width: 210px;
+  padding: 20px;
+  min-height: 160px;
+  object-fit: contain;
+  transition: 0.3s ease-in-out;
+}
+
+.list > img:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 475px) {
+  .list > img {
+    width: 75%;
+  }
+}
