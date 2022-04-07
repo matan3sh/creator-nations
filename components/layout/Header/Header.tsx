@@ -4,7 +4,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { DropDown } from "../DropDown/DropDown";
 
 import styles from "./Header.module.css";
-import { headerLinks } from "../../data";
+import { headerLinks } from "../../../data";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -26,33 +26,30 @@ export function Header() {
     };
   }, []);
 
+  const onScrollTo = (to: string) => {
+    document.getElementById(to)?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <DropDown isOpen={isOpen} toggle={toggle} data={headerLinks} />
+      <DropDown
+        isOpen={isOpen}
+        toggle={toggle}
+        data={headerLinks}
+        onScrollTo={onScrollTo}
+      />
 
       <header
         className={styles.container}
         style={{ backgroundColor: scrollNav ? "#fff" : "transparent" }}>
-        <h1
-          className={styles.logo}
-          onClick={() =>
-            document
-              .getElementById("Feature")
-              ?.scrollIntoView({ behavior: "smooth" })
-          }>
+        <h1 className={styles.logo} onClick={() => onScrollTo("Feature")}>
           <span>Creator</span>Nations
         </h1>
 
         <nav>
           <ul className={styles.list}>
             {headerLinks.map((item) => (
-              <li
-                key={item.title}
-                onClick={() =>
-                  document
-                    .getElementById(item.link)
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }>
+              <li key={item.title} onClick={() => onScrollTo(item.link)}>
                 {item.title}
               </li>
             ))}

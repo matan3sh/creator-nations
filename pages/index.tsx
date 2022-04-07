@@ -2,12 +2,12 @@ import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { Feature } from "../components/Feature/Feature";
-import { Footer } from "../components/Footer/Footer";
-import { Grid } from "../components/Grid/Grid";
-import { GridCards } from "../components/GridCards/GridCards";
-import { Section } from "../components/Section/Section";
-import { Contact } from "../components/Contact/Contact";
+import { Feature } from "../components/home/Feature/Feature";
+import { Footer } from "../components/layout/Footer/Footer";
+import { Grid } from "../components/shared/Grid/Grid";
+import { GridCards } from "../components/shared/GridCards/GridCards";
+import { Section } from "../components/shared/Section/Section";
+import { Contact } from "../components/home/Contact/Contact";
 
 import { sendMessage } from "../services";
 import { ContactData } from "../typings";

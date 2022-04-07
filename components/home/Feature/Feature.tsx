@@ -1,7 +1,4 @@
-import Image from "next/image";
-
-import { Header } from "../Header/Header";
-
+import { Header } from "../../layout/Header/Header";
 import styles from "./Feature.module.css";
 
 export function Feature() {

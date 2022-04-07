@@ -1,15 +1,16 @@
 import CloseIcon from "@mui/icons-material/Close";
-import { HeaderLinks } from "../../typings";
+import { HeaderLinks } from "../../../typings";
 
 import styles from "./DropDown.module.css";
 
 interface IProps {
   toggle: () => void;
   isOpen: boolean;
+  onScrollTo: (to: string) => void;
   data: HeaderLinks[];
 }
 
-export function DropDown({ toggle, isOpen, data }: IProps) {
+export function DropDown({ toggle, isOpen, data, onScrollTo }: IProps) {
   return (
     <div
       className={styles.container}
@@ -23,9 +24,7 @@ export function DropDown({ toggle, isOpen, data }: IProps) {
           {data.map((item) => (
             <p
               onClick={() => {
-                document
-                  .getElementById(item.link)
-                  ?.scrollIntoView({ behavior: "smooth" });
+                onScrollTo(item.link);
                 toggle();
               }}
               className={styles.link}

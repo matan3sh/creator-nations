@@ -1,6 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 
-import { ContactData } from "../../typings";
+import { ContactData } from "../../../typings";
 import styles from "./Contact.module.css";
 
 interface IProps {
