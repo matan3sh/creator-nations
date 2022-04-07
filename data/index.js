@@ -380,7 +380,7 @@ export const ourTeamData = [
 ];
 
 export const headerLinks = [
-  { title: "Partners", link: "#Partners" },
-  { title: "Supporters", link: "#Supporters" },
-  { title: "Speakers", link: "#Speakers" },
+  { title: "Partners", link: "Partners" },
+  { title: "Supporters", link: "Supporters" },
+  { title: "Speakers", link: "Speakers" },
 ];

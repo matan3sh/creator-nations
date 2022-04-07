@@ -33,14 +33,28 @@ export function Header() {
       <header
         className={styles.container}
         style={{ backgroundColor: scrollNav ? "#fff" : "transparent" }}>
-        <h1 className={styles.logo}>
+        <h1
+          className={styles.logo}
+          onClick={() =>
+            document
+              .getElementById("Feature")
+              ?.scrollIntoView({ behavior: "smooth" })
+          }>
           <span>Creator</span>Nations
         </h1>
 
         <nav>
           <ul className={styles.list}>
             {headerLinks.map((item) => (
-              <li key={item.title}>{item.title}</li>
+              <li
+                key={item.title}
+                onClick={() =>
+                  document
+                    .getElementById(item.link)
+                    ?.scrollIntoView({ behavior: "smooth" })
+                }>
+                {item.title}
+              </li>
             ))}
           </ul>
         </nav>

@@ -21,9 +21,17 @@ export function DropDown({ toggle, isOpen, data }: IProps) {
       <div className={styles.wrapper}>
         <div className={styles.menu}>
           {data.map((item) => (
-            <a href={item.link} className={styles.link} key={item.link}>
+            <p
+              onClick={() => {
+                document
+                  .getElementById(item.link)
+                  ?.scrollIntoView({ behavior: "smooth" });
+                toggle();
+              }}
+              className={styles.link}
+              key={item.link}>
               {item.title}
-            </a>
+            </p>
           ))}
           <a
             className={styles.button}

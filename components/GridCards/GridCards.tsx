@@ -10,7 +10,7 @@ interface IProps {
 
 export function GridCards({ title, data, link }: IProps) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={link}>
       <h1>{title}</h1>
 
       <div className={styles.list}>

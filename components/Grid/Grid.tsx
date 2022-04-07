@@ -8,7 +8,7 @@ interface IProps {
 
 export function Grid({ title, data, link }: IProps) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id={link}>
       <h1>{title}</h1>
       <div className={styles.list}>
         {data.map((item, index) => (
