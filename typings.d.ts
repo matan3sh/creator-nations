@@ -10,3 +10,10 @@ export interface HeaderLinks {
   title: string;
   link: string;
 }
+
+export interface Card {
+  _id: string;
+  name: string;
+  image: string;
+  title?: string;
+}

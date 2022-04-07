@@ -1,6 +1,6 @@
+import { urlFor } from "../../../sanity";
+import { Card } from "../../../typings";
 import styles from "./GridCards.module.css";
-
-type Card = { name: string; image: string; role: string };
 
 interface IProps {
   title: string;
@@ -14,11 +14,11 @@ export function GridCards({ title, data, link }: IProps) {
       <h1>{title}</h1>
 
       <div className={styles.list}>
-        {data.map((item, key) => (
-          <div className={styles.card} key={key}>
-            <img src={item.image} alt={item.name} />
+        {data.map((item) => (
+          <div className={styles.card} key={item._id}>
+            <img src={urlFor(item.image).url()} alt={item.name} />
             <h2>{item.name}</h2>
-            <h3>{item.role}</h3>
+            <h3>{item.title}</h3>
           </div>
         ))}
       </div>
