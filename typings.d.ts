@@ -5,3 +5,8 @@ export type ContactData = {
   company: string;
   message: string;
 };
+
+export interface HeaderLinks {
+  title: string;
+  link: string;
+}

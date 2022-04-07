@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   background-image: url("/images/contact/contact.png");
-  height: 75vh;
+  height: 100vh;
   width: 1920px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -15,6 +15,11 @@
 @media screen and (max-width: 1920px) {
   .container {
     width: 100%;
+  }
+}
+@media screen and (max-width: 728px) {
+  .container {
+    height: 55vh;
   }
 }
 
@@ -56,7 +61,7 @@
 }
 
 .row > textarea {
-  font-family: "Neue-Helvetica-Medium", sans-serif !important;
+  font-family: "Neue-Helvetica-Medium", sans-serif;
   color: #fff;
   width: 100%;
   background: linear-gradient(304.49deg, #001443 45.38%, #000a2c 82.48%);
@@ -67,16 +72,17 @@
 }
 
 .row > textarea::placeholder {
-  font-family: "Moderat-Regular", sans-serif !important;
+  font-family: "Moderat-Regular", sans-serif;
   color: #fff;
 }
 
 .button {
+  font-family: "Moderat-Regular", sans-serif;
   margin: auto;
   background-color: #e1ff65;
-  padding: 15px 30px;
-  font-size: 20px;
-  width: 246px;
+  padding: 7.5px 15px;
+  font-size: 16px;
+  width: 146px;
   border: none;
   border-radius: 3px;
   transition: 0.3s ease-in-out;

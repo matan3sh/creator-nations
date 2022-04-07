@@ -378,3 +378,9 @@ export const ourTeamData = [
     role: "Video Manager - Coin Nations",
   },
 ];
+
+export const headerLinks = [
+  { title: "Partners", link: "#Partners" },
+  { title: "Supporters", link: "#Supporters" },
+  { title: "Speakers", link: "#Speakers" },
+];
