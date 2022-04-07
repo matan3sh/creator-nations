@@ -72,19 +72,19 @@
 }
 
 .button {
-  margin-left: auto;
-  color: #fff;
+  margin: auto;
+  background-color: #e1ff65;
+  padding: 15px 30px;
+  font-size: 20px;
+  width: 246px;
   border: none;
-  background: linear-gradient(120deg, #ab4e88, #ce8f6b);
-  padding: 15px 20px;
-  border-radius: 35px;
-  font-size: 14px;
-  transition: 0.3s;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
 }
 
 .button:hover {
+  transform: translateY(-5px);
   cursor: pointer;
-  transform: translateY(-4px);
 }
 
 @media screen and (max-width: 400px) {
