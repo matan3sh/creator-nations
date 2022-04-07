@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -6,6 +7,10 @@ import { Footer } from "../components/Footer/Footer";
 import { Grid } from "../components/Grid/Grid";
 import { GridCards } from "../components/GridCards/GridCards";
 import { Section } from "../components/Section/Section";
+import { Contact } from "../components/Contact/Contact";
+
+import { sendMessage } from "../services";
+import { ContactData } from "../typings";
 
 import {
   ourPartnersData,
@@ -17,6 +22,16 @@ import {
 } from "../data";
 
 const Home: NextPage = () => {
+  const [sentSuccess, setSentSuccess] = useState(false);
+
+  const sendContact = (values: ContactData) => {
+    sendMessage(values);
+    setSentSuccess(true);
+    setTimeout(() => {
+      setSentSuccess(false);
+    }, 10000);
+  };
+
   return (
     <>
       <Head>
@@ -46,6 +61,7 @@ const Home: NextPage = () => {
         />
         <Section data={invite} />
         <GridCards title="Our Team" data={ourTeamData} link="Team" />
+        <Contact onSubmit={sendContact} success={sentSuccess} />
       </main>
 
       <Footer />

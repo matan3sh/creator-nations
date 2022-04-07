@@ -5,16 +5,8 @@
   align-items: center;
   margin: auto;
   height: 10vh;
-  width: 1920px;
-  gap: 5px;
   background: linear-gradient(304.49deg, #001443 45.38%, #000a2c 82.48%);
   color: white;
-}
-
-@media screen and (max-width: 1920px) {
-  .container {
-    width: 100%;
-  }
 }
 
 .container > h2 {

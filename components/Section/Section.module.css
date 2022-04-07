@@ -67,6 +67,7 @@
   font-family: "Neue-Helvetica-Medium", "san-serif";
   font-size: 46px;
   width: 680px;
+  overflow-y: hidden;
 }
 
 @media screen and (max-width: 768px) {
