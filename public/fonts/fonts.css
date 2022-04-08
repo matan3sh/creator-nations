@@ -1,19 +1,19 @@
 @font-face {
   font-family: "Neue-Helvetica-Light";
-  src: url("./Helvetica-Neue-UltraLight.ttf") format("opentype");
+  src: url("./HelveticaNeue_Light.ttf") format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Neue-Helvetica-Medium";
-  src: url("./Helvetica.Neue.Medium.Extended.ttf") format("opentype");
+  src: url("./HelveticaNeue_Medium.ttf") format("opentype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Neue-Helvetica-Bold";
-  src: url("./Helvetica.Neue.Bold.ttf") format("opentype");
+  src: url("./HelveticaNeue_Bold.ttf") format("opentype");
   font-weight: 700;
   font-style: normal;
 }
