@@ -20,6 +20,11 @@
   font-size: 42px;
   padding-left: 150px;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1130px) {

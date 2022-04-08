@@ -1,7 +1,13 @@
 import { Header } from "../../layout/Header/Header";
+import { Card } from "../../../typings";
+import { urlFor } from "../../../sanity";
 import styles from "./Feature.module.css";
 
-export function Feature() {
+interface IProps {
+  featurePartners: Card[];
+}
+
+export function Feature({ featurePartners }: IProps) {
   return (
     <div className={styles.container} id="Feature">
       <Header />
@@ -22,13 +28,13 @@ export function Feature() {
         <button className={styles.button}>Get early access</button>
 
         <div className={styles.partners}>
-          <img src="/images/feature/partners/WeDiggIT.png" alt="WeDiggIT" />
-          <img src="/images/feature/partners/ZenGo.png" alt="ZenGo" />
-          <img
-            src="/images/feature/partners/Digital_Bank.png"
-            alt="Digital_Bank"
-          />
-          <img src="/images/feature/partners/Celsius.png" alt="Celsius" />
+          {featurePartners.map((partner) => (
+            <img
+              src={urlFor(partner.image).url()}
+              alt={partner.name}
+              key={partner._id}
+            />
+          ))}
         </div>
       </div>
     </div>
