@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta itemProp="name" content="Cryptoweek.co.il" />
+          <meta itemProp="name" content="CreatorNations.com" />
           <meta
             itemProp="description"
             content="Join global crypto leaders, VC firms and promising blockchain
@@ -14,9 +14,9 @@ export default class MyDocument extends Document {
           />
           <meta itemProp="image" content="/images/metadata_img.png" />
 
-          <meta property="og:url" content="https://cryptoweek.co.il" />
+          <meta property="og:url" content="https://creatornations.com" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Cryptoweek.co.il" />
+          <meta property="og:title" content="CreatorNations.com" />
           <meta
             property="og:description"
             content="Join global crypto leaders, VC firms and promising blockchain
@@ -26,7 +26,7 @@ export default class MyDocument extends Document {
           <meta property="og:image" content="/images/metadata_img.png" />
 
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:title" content="Cryptoweek.co.il" />
+          <meta name="twitter:title" content="CreatorNations.com" />
           <meta
             name="twitter:description"
             content="Join global crypto leaders, VC firms and promising blockchain

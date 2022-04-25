@@ -102,7 +102,8 @@
   }
 }
 
-.button {
+.buttonLink {
+  text-align: center;
   background-color: #e1ff65;
   color: #000;
   padding: 15px 30px;
@@ -113,7 +114,7 @@
   transition: 0.3s ease-in-out;
 }
 
-.button:hover {
+.buttonLink:hover {
   transform: translateY(-5px);
   cursor: pointer;
 }
@@ -152,5 +153,26 @@
     position: absolute;
     top: 20%;
     right: 5%;
+  }
+}
+
+.dateHeadline {
+  font-family: "Neue-Helvetica-Medium", "san-serif";
+  font-size: 22px;
+}
+
+@media screen and (max-width: 860px) {
+  .dateHeadline {
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .dateHeadline {
+    font-size: 17px;
+    padding: 5px;
   }
 }
