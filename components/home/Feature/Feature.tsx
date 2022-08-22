@@ -27,7 +27,7 @@ export function Feature({ featurePartners }: IProps) {
           </p>
 
           <p className={styles.dateHeadline}>
-            October 25 - 26, 2022 | Global Virtual Summit
+            February 27 - 28, 2023 | Global Virtual Summit
           </p>
         </div>
 
@@ -35,7 +35,8 @@ export function Feature({ featurePartners }: IProps) {
           className={styles.buttonLink}
           href="https://next.brella.io/join/CreatorNations"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           Get early access
         </a>
 
