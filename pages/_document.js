@@ -9,8 +9,7 @@ export default class MyDocument extends Document {
           <meta
             itemProp="description"
             content="Join global crypto leaders, VC firms and promising blockchain
-          companies unveiling the future trends from the world’s top Crypto
-          Week!"
+          companies unveiling the future trends from the world’s top NFT"
           />
           <meta itemProp="image" content="/images/metadata_img.png" />
 
@@ -30,8 +29,7 @@ export default class MyDocument extends Document {
           <meta
             name="twitter:description"
             content="Join global crypto leaders, VC firms and promising blockchain
-          companies unveiling the future trends from the world’s top Crypto
-          Week!"
+          companies unveiling the future trends from the world’s top NFT"
           />
           <meta name="twitter:image" content="/images/metadata_img.png" />
 
@@ -54,7 +52,8 @@ export default class MyDocument extends Document {
           {/* Global site tag (gtag.js) - Google Ads: 433885515 */}
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=AW-804331550"></script>
+            src="https://www.googletagmanager.com/gtag/js?id=AW-804331550"
+          ></script>
           <script
             dangerouslySetInnerHTML={{
               __html: `      window.dataLayer = window.dataLayer || [];
