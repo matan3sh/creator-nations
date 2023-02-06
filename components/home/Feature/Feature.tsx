@@ -27,7 +27,7 @@ export function Feature({ featurePartners }: IProps) {
           </p>
 
           <p className={styles.dateHeadline}>
-            February 27 - 28, 2023 | Global Virtual Summit
+            October 30-31, 2023 | Global Virtual Summit
           </p>
         </div>
 
