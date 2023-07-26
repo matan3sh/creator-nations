@@ -4,7 +4,7 @@ export const ourPartnersData = [
   "/images/our_partners/Nuvei.png",
   "/images/our_partners/black-mp-logo.png",
   "/images/our_partners/celsius.png",
-];
+]
 
 export const ourSupportersData = [
   "/images/our_supporters/MoonWhiteOnBlackSquare.png",
@@ -46,7 +46,7 @@ export const ourSupportersData = [
   "/images/our_supporters/BAS_logo_FA_-Horizontal_RGB-Web.png",
   "/images/our_supporters/etoro.jpeg",
   "/images/our_supporters/H_Logomark_Lockup_black.png",
-];
+]
 
 export const about = {
   title:
@@ -55,7 +55,15 @@ export const about = {
     "We’re showcasing the best crypto companies, leaders on one Coin Nations Global Summit",
   color: "#3f354d",
   bg: "/images/about/bg.png",
-};
+}
+
+export const aboutV1 = {
+  title: "What is Creator Nations Hackathon Day?",
+  subtitle:
+    "The Creator Nations Hackathon Day is an initiative aiming to gather the world’s brightest online talents to battle the world’s biggest challenges. During this day, we want to bring people from all over the whole world together. This day is meant to connect the world together in finding solutions for our global digital challenges. We want to empower , embrace and include all creators.",
+  color: "#3f354d",
+  bg: "/images/about/bg.png",
+}
 
 export const ourSpeakersData = [
   {
@@ -341,7 +349,7 @@ export const ourSpeakersData = [
     image: "/images/our_speakers/Jordan_Fried.png",
     title: "Chairman & CEO of Immutable Holdings",
   },
-];
+]
 
 export const invite = {
   title:
@@ -350,7 +358,14 @@ export const invite = {
     "Trading digital assets is changing the way the world thinks about money and finance. Join the best 2021 Coin Nations Summit to take part of the new world economy.",
   color: "#fff",
   bg: "/images/invite/bg.png",
-};
+}
+
+export const doodleDay = {
+  title: "",
+  subtitle: "",
+  color: "#fff",
+  bg: "/images/doodleDay/doodleDay.svg",
+}
 
 export const ourTeamData = [
   {
@@ -380,10 +395,10 @@ export const ourTeamData = [
     image: "/images/our_team/Ivan.png",
     role: "Video Manager - Coin Nations",
   },
-];
+]
 
 export const headerLinks = [
   { title: "Partners", link: "Partners" },
   { title: "Supporters", link: "Supporters" },
   { title: "Speakers", link: "Speakers" },
-];
+]

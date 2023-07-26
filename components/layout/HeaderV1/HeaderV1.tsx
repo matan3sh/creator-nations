@@ -3,10 +3,10 @@ import { useEffect, useState } from "react"
 import MenuIcon from "@mui/icons-material/Menu"
 import { DropDown } from "../DropDown/DropDown"
 
-import styles from "./Header.module.css"
+import styles from "./HeaderV1.module.css"
 import { headerLinks } from "../../../data"
 
-export function Header() {
+export function HeaderV1() {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const toggle = () => setIsOpen((prev) => !prev)
 
@@ -43,9 +43,9 @@ export function Header() {
         className={styles.container}
         style={{ backgroundColor: scrollNav ? "#fff" : "transparent" }}
       >
-        <h1 className={styles.logo} onClick={() => onScrollTo("Feature")}>
-          <span>Creator</span>Nations
-        </h1>
+        <div className={styles.logo} onClick={() => onScrollTo("Feature")}>
+          <img src="/images/logo.svg" alt="logo" height={80} width={110} />
+        </div>
 
         <nav>
           <ul className={styles.list}>
