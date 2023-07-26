@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Head from "next/head"
 
 export function SEO() {
   return (
@@ -9,12 +9,13 @@ export function SEO() {
       </title>
       <meta
         name="description"
-        content="Join global NFT leaders and promising Metaverse and Web3 companies unveiling the future trends from the world’s top Creator Nations!"
+        content="CALLING THE WORLD'S TOP Digital TALENTS: A 24 hour hackathon. An initiative to battle the world's biggest digital challenges.
+We want to make an impact on the world with the newest Web3 technologies."
       />
       <meta
         name="keywords"
         content="nft, crypto bitcoin, ethereum, revolut, kraken, visa, circle"
       />
     </Head>
-  );
+  )
 }

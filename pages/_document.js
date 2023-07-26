@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document"
 
 export default class MyDocument extends Document {
   render() {
@@ -8,8 +8,8 @@ export default class MyDocument extends Document {
           <meta itemProp="name" content="CreatorNations.com" />
           <meta
             itemProp="description"
-            content="Join global crypto leaders, VC firms and promising blockchain
-          companies unveiling the future trends from the world’s top NFT"
+            content="CALLING THE WORLD'S TOP Digital TALENTS: A 24 hour hackathon. An initiative to battle the world's biggest digital challenges.
+We want to make an impact on the world with the newest Web3 technologies."
           />
           <meta itemProp="image" content="/images/metadata_img.png" />
 
@@ -18,9 +18,8 @@ export default class MyDocument extends Document {
           <meta property="og:title" content="CreatorNations.com" />
           <meta
             property="og:description"
-            content="Join global crypto leaders, VC firms and promising blockchain
-          companies unveiling the future trends from the world’s top Crypto
-          Week!"
+            content="CALLING THE WORLD'S TOP Digital TALENTS: A 24 hour hackathon. An initiative to battle the world's biggest digital challenges.
+We want to make an impact on the world with the newest Web3 technologies."
           />
           <meta property="og:image" content="/images/metadata_img.png" />
 
@@ -28,8 +27,8 @@ export default class MyDocument extends Document {
           <meta name="twitter:title" content="CreatorNations.com" />
           <meta
             name="twitter:description"
-            content="Join global crypto leaders, VC firms and promising blockchain
-          companies unveiling the future trends from the world’s top NFT"
+            content="CALLING THE WORLD'S TOP Digital TALENTS: A 24 hour hackathon. An initiative to battle the world's biggest digital challenges.
+We want to make an impact on the world with the newest Web3 technologies."
           />
           <meta name="twitter:image" content="/images/metadata_img.png" />
 
@@ -70,6 +69,6 @@ export default class MyDocument extends Document {
           <NextScript />
         </body>
       </Html>
-    );
+    )
   }
 }
